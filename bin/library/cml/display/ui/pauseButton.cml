@@ -1,0 +1,10 @@
+<cml>
+
+	<Button id="pause" class="viewer-button" dispatch="down:pause">
+		<Container id="hit">
+			<Graphic class="btn-graphic"/>	
+			<SWF class="btn-swf" x="22.7" y="13.3" classRef="org.openexhibits.assets.Pause"/>
+		</Container>
+	</Button>
+
+</cml>

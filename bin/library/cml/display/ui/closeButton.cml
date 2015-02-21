@@ -1,0 +1,10 @@
+<cml>
+
+	<Button id="close" class="viewer-button" dispatch="down:close">
+		<Container id="hit">
+			<Graphic class="btn-graphic"/>	
+			<SWF class="btn-swf" x="17.2" y="17.2" classRef="org.openexhibits.assets.Close"/>
+		</Container>
+	</Button>
+
+</cml>

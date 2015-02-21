@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<cml>
+	
+	<CVViewer id="viewer-template" releaseInertia="true" scale=".5" rotation="0" minScale=".4" maxScale="1">
+
+		<!-- media elements -->
+		<Image src="assets/2.jpg"/>
+
+		<!-- frame-->
+		<Include src="cml/display/ui/frame.cml" />
+		
+		<!-- menu -->
+		<CVMenu id="menu">
+			<Include src="cml/display/ui/playButton.cml"/>		
+			<Include src="cml/display/ui/pauseButton.cml"/>		
+			<Include src="cml/display/ui/closeButton.cml"/>		
+		</CVMenu>
+		
+		<!-- gestures -->
+		<GestureList>
+			<Gesture ref="n-drag-inertia" />
+			<Gesture ref="n-scale" />
+			<Gesture ref="n-rotate-inertia" />
+		</GestureList>
+		
+	</CVViewer>	
+	
+</cml>

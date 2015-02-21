@@ -1,0 +1,51 @@
+To quit the program, press CTRL + Q. You can alternatively swipe the right edge of the screen to access the charms bar and exit out of the program that way as well. 
+
+To add media to the table please do the following: 
+
+Locate the assets directory 
+	
+	C:\Program Files\Ideum\VirgilOrtiz\bin\library\assets\
+	
+And copy over your picture and video files to that directory. 
+
+Please keep in mind that images should be 1280x720 @ 72ppi (JPG or PNG). Videos are the same dimensions but should be compressed using the on2vp6 FLV codec. 
+
+Next, open Notepad and then open the following file: 
+
+	C:\Program Files\Ideum\VirgilOrtiz\bin\library\cml\display\sets.cml
+
+Find the set you wish to update. Example: 
+
+		<!-- REZ SPINE TOTES-->
+		<Set id="rez-spine-totes">
+			
+			<!--display-->
+			<Image src="ui/rez-spine-totes-sel.png"/>
+			<Image src="ui/rez-spine-totes.png"/>
+			
+			<!--media-->
+			<media>assets/2.png</media>
+			<media>assets/2a.png</media>
+			
+		</Set>
+		
+If you want another picture to appear in the REZ SPINE TOTE area then add a new media item like the following: 
+
+		<!-- REZ SPINE TOTES-->
+		<Set id="rez-spine-totes">
+			
+			<!--display-->
+			<Image src="ui/rez-spine-totes-sel.png"/>
+			<Image src="ui/rez-spine-totes.png"/>
+			
+			<!--media-->
+			<media>assets/2.png</media>
+			<media>assets/2a.png</media>
+			<media>assets/new-image.png</media>
+			
+		</Set>
+
+The "new-image.png" should be in the assets folder from the original copy over. 
+
+After this is done, double click on the VirgilOrtiz.exe shortcut on the desktop to relaunch the program. 
+

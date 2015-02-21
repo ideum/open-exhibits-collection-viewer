@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<cml>
+	
+	<!-- MEDIA SETS -->
+	<Sets id="sets" y="1027">
+		
+		<!-- home -->
+		<Set id="home">
+			
+			<!--display-->
+			<Image src="ui/home-sel.png"/>
+			<Image src="ui/home.png"/>
+			
+			<!--media-->
+			
+		</Set>
+				
+		<!-- first set -->
+		<Set id="arizona">
+			
+			<!--display-->
+			<Image src="ui/selected.png"/>						
+			<Image src="ui/initial.png"/>
+			<Text str="ARIZONA" font="OpenSansBold" fontSize="20" textAlign="center"/>
+			
+			<!--media-->
+			<media>assets/2.jpg</media>
+			<media>assets/2a.jpg</media>
+			<media>assets/2b.jpg</media>
+			<media>assets/2c.jpg</media>
+			<media>assets/2d.jpg</media>
+			<media>assets/2e.jpg</media>
+			
+		</Set>
+		
+		<!-- second set -->
+		<Set id="colorado">
+			
+			<!--display-->
+			<Image src="ui/selected.png"/>			
+			<Image src="ui/initial.png"/>
+			<Text str="COLORADO" font="OpenSansBold" fontSize="20" textAlign="center"/>
+			
+			<!--media-->
+			<media>assets/3.jpg</media>		
+			<media>assets/3a.jpg</media>		
+			<media>assets/3b.jpg</media>		
+			<media>assets/3c.jpg</media>		
+			<media>assets/3d.jpg</media>		
+			
+		</Set>		
+		
+		<!-- third set -->
+		<Set id="new mexico">
+			
+			<!--display-->
+			<Image src="ui/selected.png"/>			
+			<Image src="ui/initial.png"/>
+			<Text str="NEW MEXICO" font="OpenSansBold" fontSize="20" textAlign="center"/>
+			
+			<!--media-->
+			<media>assets/4.jpg</media>
+			<media>assets/4a.jpg</media>
+			<media>assets/4b.jpg</media>
+			<media>assets/4c.jpg</media>
+			<media>assets/4d.jpg</media>
+			<media>assets/4e.jpg</media>
+			
+		</Set>		
+		
+		<!-- fourth set-->
+		<Set id="utah">
+			
+			<!--display-->
+			<Image src="ui/selected.png"/>			
+			<Image src="ui/initial.png"/>
+			<Text str="UTAH" font="OpenSansBold" fontSize="20" textAlign="center"/>
+			
+			<!--media-->
+			<media>assets/5.jpg</media>
+			<media>assets/5a.jpg</media>
+			<media>assets/5b.jpg</media>
+			<media>assets/5c.jpg</media>
+			<media>assets/5d.jpg</media>
+			
+		</Set>										
+		
+		<!--horizontal list layout-->
+		<Layout ref="ListLayout" useMargins="true" marginX="5.5"/>		
+		
+	</Sets>
+	
+</cml>

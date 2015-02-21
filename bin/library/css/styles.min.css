@@ -1,0 +1,6 @@
+#video{width:1920;height:1080;}
+#menu{alpha:0.75;position:bottomRight;autohide:true;paddingLeft:835;paddingBottom:15;paddingRight:15;visible:false;}
+.viewer-button{hit:hit;initial:hit;down:hit;up:hit;}
+.btn-graphic{shape:circle;radius:31.25;lineStroke:1.5;color:0x282E33;}
+.btn-swf{color:0xFFFFFF;scale:2.5;}
+ 

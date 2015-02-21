@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<cml>
+	
+	<Slideshow rate="7000" fadeDuration="2000" loop="true" autoplay="true">
+		<Image src="assets/1.jpg"/>
+		<Image src="assets/1a.jpg"/>
+		<Image src="assets/1b.jpg"/>
+		<Image src="assets/1c.jpg"/>
+		<Image src="assets/1d.jpg"/>
+		<Image src="assets/1e.jpg"/>
+	</Slideshow>
+	
+</cml>
