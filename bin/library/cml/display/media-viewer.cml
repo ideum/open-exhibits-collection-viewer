@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml rootDirectory="library/">
+
+	<MediaViewer id="viewer-template" back="#info" affineTransform="true" visible="false" releaseInertia="true" topOnPoint="true">
+		
+		<!-- FRONT: Media -->
+		<Media id="media" src="ui/place_holder.jpg" loop="true" targetParent="true" mouseChildren="false"/>
+
+		<!-- BACK: info panel -->
+		<Container id="info" visible="false" targetParent="true" width="100%" height="100%">
+			<Graphic color="0x709EF4" shape="rectangle" width="100%" height="100%"/>
+			<Container width="100%" height="100%">
+				<Text id="title" str="Market Street" fontSize="30" color="0xFFFFFF" font="OpenSansBold" width="100%" textAlign="center"/>				
+				<Text id="descr" y="40" fontSize="20" wordWrap="true" color="0xFFFFFF" width="100%" autosize="true" multiline="true" 
+					str="A Trip Down Market Street is a 13-minute actuality film recorded by placing a movie camera on the front of a cable car as it travels down San Franciscos Market Street."/>			
+			</Container>
+		</Container>
+		
+		<!-- FRAME-->
+		<Include src="cml/display/ui/frame.cml" />
+		
+		<!-- MENU -->
+		<Menu alpha="0.75" position="bottomLeft" autohide="false" visible="false" margin="184" offsetX="-35" offsetY="46">
+			<Include src="cml/display/ui/infoButton.cml"/>
+			<Include src="cml/display/ui/playButton.cml"/>
+			<Include src="cml/display/ui/pauseButton.cml"/>
+			<Include src="cml/display/ui/closeButton.cml"/>
+		</Menu>
+
+		<!-- GESTURES -->	
+		<Gesture ref="n-drag-inertia" />
+		<Gesture ref="n-scale" />
+		<Gesture ref="n-rotate-inertia" />
+		
+	</MediaViewer>
+
+</cml>

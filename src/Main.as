@@ -1,5 +1,6 @@
 package {
 	
+	import com.gestureworks.cml.components.MediaViewer;
 	import com.gestureworks.cml.core.CMLCore;
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.cml.utils.document;
@@ -8,8 +9,6 @@ package {
 	import display.Set;
 	import display.Sets;
 	import display.SetViewer;
-	import display.CVMenu;
-	import display.CVViewer;
 	import flash.events.Event;
 	
 	/**
@@ -28,7 +27,7 @@ package {
 			
 			// load custom cml package and classes
 			CMLCore.packages = CMLCore.packages.concat(["display"]);
-			CMLCore.classes = CMLCore.classes.concat([CVMenu, CVViewer, Set, Sets, SetViewer]);				
+			CMLCore.classes = CMLCore.classes.concat([Set, Sets, SetViewer]);				
 			
 			fullscreen = true;
 			gml = "library/gml/gestures.gml";

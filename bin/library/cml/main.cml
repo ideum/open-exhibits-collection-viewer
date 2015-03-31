@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<cml css="css/styles.css" rootDirectory="library/">		
+<cml rootDirectory="library/" css="css/styles.css">		
 	
 	<!--control assets-->
 	<LibraryKit>
@@ -10,14 +10,11 @@
 	<!--background-->
 	<Include src="cml/display/slideshow-background.cml"/> 
 	
-	<!--temp-->
-	<!--<Image src="ui/placement-reference.png"/>-->
-	
 	<!-- media sets -->
 	<Include src="cml/display/sets.cml"/>
 	
 	<!--viewer template-->
-	<Include src="cml/display/cv-viewer.cml"/> 
+	<Include src="cml/display/media-viewer.cml"/> 
 	
 	<!--set viewer-->
 	<Include src="cml/display/set-viewer.cml"/>

@@ -1,4 +1,6 @@
 <?xml version="1.0" ?>
 <cml>
-	<SetViewer autoShuffle="true" amountToShow="3" mouseChildren="true" animateIn="true" template="viewer-template"/>	
+	<SetViewer template="viewer-template">
+		<Collection displayCount="3" animateIn="true"/>
+	</SetViewer>	
 </cml>

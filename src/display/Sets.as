@@ -1,5 +1,8 @@
 package display {
+	import com.gestureworks.cml.base.media.MediaStatus;
 	import com.gestureworks.cml.elements.Container;
+	import com.gestureworks.cml.events.StateEvent;
+	import com.gestureworks.cml.layouts.Layout;
 	import com.gestureworks.events.GWTouchEvent;
 	/**
 	 * ...
@@ -8,7 +11,9 @@ package display {
 	public class Sets extends Container {
 		
 		private var _selected:Set;
-		private var _maxSize:int = 0; 
+		private var _maxSize:int; 
+		private var sets:Array; 
+		private var loadCount:int;
 		public var callback:Function;		
 		
 		/**
@@ -20,16 +25,27 @@ package display {
 			addEventListener(GWTouchEvent.TOUCH_BEGIN, selection);
 			
 			//compute max set size
-			var sets:Array = getElementsByTagName(Set);
+			sets = getElementsByTagName(Set);
 			for each(var s:Set in sets) {
 				if (s.media.length > _maxSize) {
 					_maxSize = s.media.length;
 				}
+				s.addEventListener(StateEvent.CHANGE, displayLoaded);
 			}
 			
 			super.init();
-			
-			x = stage.stageWidth/2  - getRect(this).width/2;
+		}
+		
+		private function displayLoaded(event:StateEvent):void {
+			if(event.property == MediaStatus.LOADED){
+				event.target.removeEventListener(StateEvent, displayLoaded);
+				loadCount++;
+				
+				if (loadCount == sets.length) {
+					applyLayout();
+					x = stage.stageWidth / 2  - getRect(this).width / 2;			
+				}
+			}
 		}
 		
 		/**
@@ -69,6 +85,10 @@ package display {
 		 * Size of largest set
 		 */
 		public function get maxSize():int { return _maxSize; }
+		
+		override public function applyLayout(value:Layout = null):void {
+			super.applyLayout(value);
+		}
 	}
 
 }

@@ -1,9 +1,10 @@
 package display {
+	import com.gestureworks.cml.base.media.MediaStatus;
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.cml.elements.Image;
 	import com.gestureworks.cml.elements.Text;
 	import com.gestureworks.cml.elements.TouchContainer;
-	import flash.display.DisplayObject;
+	import com.gestureworks.cml.events.StateEvent;
 	/**
 	 * ...
 	 * @author Ideum
@@ -19,8 +20,7 @@ package display {
 		
 		public var defaultTextColor:uint = 0xFFFFFF;
 		public var selectedTextColor:uint = 0x000000;
-		
-		
+				
 		/**
 		 * @inheritDoc
 		 */
@@ -29,26 +29,36 @@ package display {
 			
 			var imgs:Array = getElementsByTagName(Image);
 			selectState = imgs[0];
-			defaultState = imgs[1];
+			defaultState = imgs[1];						
 			
 			label = getElementsByTagName(Text)[0];
 			if (label) {
 				label.color = defaultTextColor;
-				label.width = width;
 			}
-		}
+			
+			if (defaultState.isLoaded) {
+				displayLoaded();
+			}
+			else{
+				defaultState.addEventListener(StateEvent.CHANGE, displayLoaded);			
+			}
+		}	
 		
 		/**
-		 * @inheritDoc
+		 * Update dimensions on image display
+		 * @param	event
 		 */
-		override public function addChild(child:DisplayObject):DisplayObject {			
-			//sync to child width
-			if(child is Image){
-				width = child.width; 
+		private function displayLoaded(event:StateEvent=null):void {
+			if (!event || (event.property == MediaStatus.LOADED && event.value)) {
+				event.target.removeEventListener(StateEvent.CHANGE, displayLoaded); 
+				dimensionsTo = event.target;
+				if (label) {
+					label.dimensionsTo = event.target;					
+				}
+				dispatchEvent(new StateEvent(StateEvent.CHANGE, this, MediaStatus.LOADED, true));
 			}
-			return super.addChild(child); 
 		}
-		
+						
 		/**
 		 * Store media sources
 		 * @param	cml
@@ -72,6 +82,9 @@ package display {
 		 */
 		public function get media():Vector.<String > { return _media; }
 		
+		/**
+		 * Alternate between selected and unselected states
+		 */
 		public function toggle():void {
 			selected = !selected;
 			
