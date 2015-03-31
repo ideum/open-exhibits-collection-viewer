@@ -44,6 +44,10 @@
 			<title>Grand Canyon National Park</title>
 			<description>The Grand Canyon (Hopi: Ongtupqa; Yavapai: Wi:kaʼi:la) is a steep-sided canyon carved by the Colorado River in the United States in the state of Arizona. It is contained within and managed by Grand Canyon National Park, the Hualapai Tribal Nation, and the Havasupai Tribe. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area and visited it on numerous occasions to hunt and enjoy the scenery.</description>		
 			
+			<media>assets/audio.mp3</media>
+			<title>Babe Ruth</title>
+			<description>Babe Ruths called shot was the home run hit by Babe Ruth of the New York Yankees in the fifth inning of Game 3 of the 1932 World Series, held on October 1, 1932, at Wrigley Field in Chicago.</description>
+			
 		</Set>
 		
 		<!-- second set -->
