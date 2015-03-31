@@ -19,6 +19,8 @@ package display  {
 		private var resources:Array = [];
 		private var currentSet:Set; 
 		private var media:Vector.<String>;	
+		private var titles:Vector.<String>;
+		private var descriptions:Vector.<String>;
 		private var collection:Collection;
 		private var displayCount:int; 
 		
@@ -70,6 +72,8 @@ package display  {
 			
 			currentSet = value; 
 			media = currentSet.media;
+			titles = currentSet.titles;
+			descriptions = currentSet.descriptions;
 			loadSet();
 		}
 		
@@ -84,7 +88,15 @@ package display  {
 			for (var i:int = 0; i < media.length; i++) {
 				viewer = MediaViewer(resources[i]);
 				viewer.resetTransform();
-				Media(viewer.front).src = media[i]; 
+				
+				Media(viewer.front).src = media[i]; 				
+				if(titles.length > i){
+					viewer.back.searchChildren("title").str = titles[i];
+				}
+				if (descriptions.length > i) {
+					viewer.back.searchChildren("descr").str = descriptions[i];
+				}
+
 				collection.addChild(viewer);
 			}
 						

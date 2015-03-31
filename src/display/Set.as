@@ -13,6 +13,8 @@ package display {
 		
 		//media collection
 		private var _media:Vector.<String> = new Vector.<String>();		
+		private var _titles:Vector.<String> = new Vector.<String>();		
+		private var _descriptions:Vector.<String> = new Vector.<String>();		
 		private var selected:Boolean;
 		private var selectState:Image; 
 		private var defaultState:Image; 
@@ -67,9 +69,19 @@ package display {
 		override public function parseCML(cml:XMLList):XMLList {
 			
 			var children:XMLList = cml.*.copy();
-			for (var i:int = children.length()-1; i >= 0 ; i--) {
-				if (children[i].name() == "media") {
-					_media.push(CMLParser.rootDirectory+children[i]);
+			var name:String; 
+			for (var i:int = children.length() - 1; i >= 0 ; i--) {
+				name = children[i].name();
+				if (name == "media") {
+					_media.push(CMLParser.rootDirectory + children[i]);
+					delete cml.*[i];
+				}
+				else if (name == "title") {
+					_titles.push(children[i]);
+					delete cml.*[i];
+				}
+				else if (name == "description") {
+					_descriptions.push(children[i]);					
 					delete cml.*[i];
 				}
 			}
@@ -81,6 +93,16 @@ package display {
 		 * Media sources
 		 */
 		public function get media():Vector.<String > { return _media; }
+		
+		/**
+		 * Media titles
+		 */
+		public function get titles():Vector.<String > { return _titles; }
+		
+		/**
+		 * Media descriptions
+		 */
+		public function get descriptions():Vector.<String > { return _descriptions; }
 		
 		/**
 		 * Alternate between selected and unselected states

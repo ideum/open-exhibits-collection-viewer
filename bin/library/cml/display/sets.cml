@@ -25,11 +25,24 @@
 			
 			<!--media-->
 			<media>assets/2.jpg</media>
+			<title>Grand Canyon National Park</title>
+			<description>The Grand Canyon is 277 miles long, up to 18 miles wide and attains a depth of over a mile (6,000 feet). Nearly two billion years of Earth's geological history have been exposed as the Colorado River and its tributaries cut their channels through layer after layer of rock while the Colorado Plateau was uplifted.</description>
+			
 			<media>assets/2a.jpg</media>
+			<title>Colorado River</title>
+			<description>Known for its dramatic canyons and whitewater rapids, the Colorado is a vital source of water for agricultural and urban areas in the southwestern desert lands of North America. The river and its tributaries are controlled by an extensive system of dams, reservoirs and aqueducts, which furnish irrigation and municipal water supply for almost 40 million people both inside and outside the watershed.</description>			
+			
 			<media>assets/2b.jpg</media>
+			<title>Montezuma Castle National Monument</title>
+			<description>Montezuma Castle National Monument, located near Camp Verde, Arizona in the southwestern United States features well-preserved cliff-dwellings. They were built and used by the Pre-Columbian Sinagua people, northern cousins of the Hohokam, around 700 AD. The structure is five stories high and took about five centuries to complete.</description>
+			
 			<media>assets/2c.jpg</media>
+			<title>Adelpha Eulalia</title>
+			<description>Adelpha eulalia, commonly known as Arizona Sister, is a species of butterfly in the family Nymphalidae. It is occurs from at least Guatemala and Mexico to the southwestern United States, including southeastern California, Arizona, New Mexico and southern Texas.</description>
+			
 			<media>assets/2d.jpg</media>
-			<media>assets/2e.jpg</media>
+			<title>Grand Canyon National Park</title>
+			<description>The Grand Canyon (Hopi: Ongtupqa; Yavapai: Wi:kaʼi:la) is a steep-sided canyon carved by the Colorado River in the United States in the state of Arizona. It is contained within and managed by Grand Canyon National Park, the Hualapai Tribal Nation, and the Havasupai Tribe. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area and visited it on numerous occasions to hunt and enjoy the scenery.</description>		
 			
 		</Set>
 		
@@ -43,11 +56,28 @@
 			
 			<!--media-->
 			<media>assets/3.jpg</media>		
+			<title>U.S. 550</title>
+			<description>Most of U.S. 550 in Colorado is two-lane mountainous highway. It is one of only two north–south U.S. Highways in Colorado which runs west of the Continental Divide. The other route is US 491. The route travels north through the San Juan Mountains.</description>
+			
 			<media>assets/3a.jpg</media>		
+			<title>The Red Fox</title>
+			<description>The red fox (Vulpes vulpes) is the largest of the true foxes and the most abundant member of the Carnivora, being distributed across the entire Northern Hemisphere from the Arctic Circle to North Africa, Central America and Asia. Its range has increased alongside human expansion, having been introduced to Australia, where it is considered harmful to native mammals and bird populations.</description>
+			
 			<media>assets/3b.jpg</media>		
+			<title>Red Rock Canyon</title>
+			<description>Red Rock Canyon Open Space is a 789-acre city park in Colorado Springs, Colorado. It is situated on the west side of the city, adjacent to Manitou Springs and south of U.S. Route 24. The park consists of a series of parallel ridges (called "hogbacks") and eroded canyons, a continuation of the same sandstone rocks of the Fountain Formation that make up Garden of the Gods a few miles to the north.</description>
+			
 			<media>assets/3c.jpg</media>		
+			<title>Big Blue Bear</title>
+			<description>A public art collection is featured throughout the interior and exterior of the convention center. The most visible work is "I See What You Mean" by Lawrence Argent, located just to the left of the main entrance on 14th Street. Erected in June 2005, the 40-foot tall polymer-concrete-clad sculpture is in the form of a lapis-lazuli-colored bear pushing its nose and paws against the glass facade, attempting to peer inside. Its installation was part of the Denver Office of Cultural Affairs' Public Art Program.</description>
+			
 			<media>assets/3d.jpg</media>	
+			<title>Colorado State Capitol</title>
+			<description>The Colorado State Capitol Building, located at 200 East Colfax Avenue in Denver, Colorado, is the home of the Colorado General Assembly and the offices of the Governor of Colorado and Lieutenant Governor of Colorado.</description>
+			
 			<media>assets/vid.mp4</media>
+			<title>Ancient Ice And Our Planet's Future</title>
+			<description>Deep in the interior of Antarctica scientists unlock the secrets of our planet’s past by studying ancient ice.</description>			
 			
 		</Set>		
 		
@@ -61,11 +91,28 @@
 			
 			<!--media-->
 			<media>assets/4.jpg</media>
+			<title>Roadrunner</title>
+			<description>The roadrunner, also known as a chaparral bird and a chaparral cock, is a fast-running ground cuckoo that has a long tail and a crest. It is found in the southwestern United States and Mexico, usually in the desert. Some have been clocked at speeds of 20 miles per hour.</description>
+			
 			<media>assets/4a.jpg</media>
+			<title>The Cathedral Basilica </title>
+			<description>The Cathedral Basilica of Saint Francis of Assisi, commonly known as Saint Francis Cathedral, is a Roman Catholic cathedral in downtown Santa Fe, New Mexico. It is the mother church of the Archdiocese of Santa Fe.</description>
+			
 			<media>assets/4b.jpg</media>
+			<title>Rio Grande Gorge</title>
+			<description>The Rio Grande Gorge is a geological feature in northern New Mexico where the watercourse of the Rio Grande follows a tectonic chasm. Beginning near the Colorado border, the approximately 50 mile gorge runs from northwest to southeast of Taos, New Mexico, through the basalt flows of the Taos Plateau volcanic field. The gorge depth is 800 feet just south of the Rio Grande Gorge Bridge, which spans the gorge 10 miles northwest of Taos.</description>			
+			
 			<media>assets/4c.jpg</media>
+			<title>Glycyrrhiza Lepidota</title>
+			<description>Glycyrrhiza lepidota (American licorice) is a species of Glycyrrhiza (a genus in the pea/bean family, Fabaceae) native to most of North America, from central Canada south through the United States to California, Texas and Virginia, but absent from the southeastern states.</description>
+			
 			<media>assets/4d.jpg</media>
+			<title>Adobe Design</title>
+			<description>Adobe is the Spanish word for mud brick, a natural building material made from sand, clay, water, and some kind of fibrous or organic material (sticks, straw, and/or manure), usually shaped into bricks using molds and dried in the sun. Adobe buildings are similar to cob and rammed earth buildings, but cob and rammed earth are directly made into walls rather than bricks.</description>
+			
 			<media>assets/4e.jpg</media>
+			<title>Organ Mountains WSA</title>
+			<description>The Organ Mountains are a rugged mountain range in southern New Mexico in the southwestern United States. They lie 10 miles east of the city of Las Cruces, in Doña Ana County.</description>			
 			
 		</Set>		
 		
@@ -79,10 +126,24 @@
 			
 			<!--media-->
 			<media>assets/5.jpg</media>
+			<title>Goblin Valley State Park</title>
+			<description>Goblin Valley State Park is a state park of Utah, USA. Its eminent feature is its thousands of hoodoos and hoodoo rocks, referred to locally as “goblins”, which are formations of mushroom-shaped rock pinnacles, some as high as several meters. The distinct shape of these rocks comes from an erosion-resistant layer of rock atop softer sandstone.</description>
+			
 			<media>assets/5a.jpg</media>
+			<title>Wasatch Range</title>
+			<description>The Wasatch Range is a mountain range that stretches approximately 160 miles from the Utah-Idaho border, south through central Utah in the western United States. It is generally considered the western edge of the greater Rocky Mountains and the eastern edge of the Great Basin region.</description>
+			
 			<media>assets/5b.jpg</media>
+			<title>Mexican Hat Rock</title>
+			<description>Mexican Hat Rock, named for its sombrero shape, is an oucropping of rock near the census-designated place of the same name.</description>
+			
 			<media>assets/5c.jpg</media>
+			<title>Juniper</title>
+			<description>Juniperus osteosperma is a shrub or small tree reaching 3–6 m (rarely to 9 m) tall. It is native to the southwestern United States in Utah, Nevada, Arizona, western New Mexico, western Colorado, Wyoming, southern Montana, southern Idaho and eastern California.</description>
+			
 			<media>assets/5d.jpg</media>
+			<title>Church Rock</title>
+			<description>Church Rock is a column of sandstone situated near the entrance to the Needles district of Canyonlands National Park.  It serves as a good example of the varied rock formations one can find in Utah's landscape.</description>			
 			
 		</Set>										
 		
