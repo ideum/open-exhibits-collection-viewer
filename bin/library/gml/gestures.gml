@@ -104,8 +104,8 @@
 						<mapping>
 							<update dispatch_type="continuous">
 								<gesture_event type="scale">
-									<property ref="scale_dsx" target="scaleX"/>
-									<property ref="scale_dsy" target="scaleY"/>
+									<property ref="scale_dsx" target="scaleX" min=".5" max="2"/>
+									<property ref="scale_dsy" target="scaleY" min=".5" max="2"/>
 								</gesture_event>
 							</update>
 						</mapping>
