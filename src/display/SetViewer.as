@@ -44,7 +44,9 @@ package display  {
 			
 			//persist display count
 			collection = front; 					
-			displayCount = collection.displayCount;		
+			displayCount = collection.displayCount;	
+			
+			collection.addEventListener(StateEvent.CHANGE, queued);
 		}	
 		
 		/**
@@ -102,6 +104,16 @@ package display  {
 						
 			collection.displayCount = displayCount;
 			DisplayUtils.initAll(collection);			
+		}
+		
+		/**
+		 * Stop media playback
+		 * @param	e
+		 */
+		private function queued(e:StateEvent):void {
+			if (e.property == "queued") {
+				Media(e.value.front).stop();
+			}
 		}
 	}
 }
