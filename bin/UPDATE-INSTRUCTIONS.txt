@@ -1,51 +1,35 @@
-To quit the program, press CTRL + Q. You can alternatively swipe the right edge of the screen to access the charms bar and exit out of the program that way as well. 
+To quit the program, press CTRL + Q. 
 
-To add media to the table please do the following: 
+To add media to the application please do the following: 
 
 Locate the assets directory 
 	
-	C:\Program Files\Ideum\VirgilOrtiz\bin\library\assets\
+	C:\Program Files\Ideum\CollectionViewerLocal\bin\library\assets\
 	
-And copy over your picture and video files to that directory. 
+And copy your picture and video files to that directory. 
 
-Please keep in mind that images should be 1280x720 @ 72ppi (JPG or PNG). Videos are the same dimensions but should be compressed using the on2vp6 FLV codec. 
+Next, load the following file in a text editor (e.g. Notepad): 
 
-Next, open Notepad and then open the following file: 
+	C:\Program Files\Ideum\CollectionViewerLocal\bin\library\cml\display\sets.cml
+	
+You will see the set display (buttons) and corresponding content nested inside of the Set tags. This
+is where you can edit or expand the content. 
 
-	C:\Program Files\Ideum\VirgilOrtiz\bin\library\cml\display\sets.cml
-
-Find the set you wish to update. Example: 
-
-		<!-- REZ SPINE TOTES-->
-		<Set id="rez-spine-totes">
-			
-			<!--display-->
-			<Image src="ui/rez-spine-totes-sel.png"/>
-			<Image src="ui/rez-spine-totes.png"/>
-			
-			<!--media-->
-			<media>assets/2.png</media>
-			<media>assets/2a.png</media>
-			
-		</Set>
+The tags grouped beneath the "display" section, construct the buttons which load the media.
+ 
+		<Image src="ui/selected.png"/>	<!--selected display of button-->					
+		<Image src="ui/initial.png"/>   <!--default display of button-->
+		<Text str="NAME OF SET" font="OpenSansBold" fontSize="20" textAlign="center"/>  <!--button text-->
 		
-If you want another picture to appear in the REZ SPINE TOTE area then add a new media item like the following: 
+The proceeding tags construct the media viewers displayed when the associated set is selected. 
 
-		<!-- REZ SPINE TOTES-->
-		<Set id="rez-spine-totes">
-			
-			<!--display-->
-			<Image src="ui/rez-spine-totes-sel.png"/>
-			<Image src="ui/rez-spine-totes.png"/>
-			
-			<!--media-->
-			<media>assets/2.png</media>
-			<media>assets/2a.png</media>
-			<media>assets/new-image.png</media>
-			
-		</Set>
-
-The "new-image.png" should be in the assets folder from the original copy over. 
-
-After this is done, double click on the VirgilOrtiz.exe shortcut on the desktop to relaunch the program. 
-
+		<media>assets/2.jpg</media>        			<!--reference to your media path-->
+		<title>Grand Canyon National Park</title>	<!--media viewer title-->
+		<description>The Grand Canyon is 277 miles long, up to 18 miles wide and attains a depth of over a mile (6,000 feet).</description>  <!--info panel metadata-->
+		
+The supported media types are:
+	-image (jpg, png, gif)
+	-video (mpeg-4, mp4, m4v, 3gpp, mov, flv, f4v)
+	-audio (mp3)
+	
+Once you have provided your media assets and edited the sets.cml file, save your changes and relaunch the application to verify your content updates. 
